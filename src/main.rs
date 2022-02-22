@@ -1,3 +1,8 @@
+const FILE:&str = include_str!("../Meteorite_Landings.csv");
+
 fn main() {
-    println!("hello world");
+    for i in FILE.lines() {
+        println!("{}", i);
+        println!("-------");
+    }
 }
